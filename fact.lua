@@ -1,7 +1,9 @@
+-- run with: lua fact.lua <number>
+
 function factorial(n, ans)
    ans = ans and ans or 1
    if ans == math.huge then
-      print(”E: overflow”)
+      print("E: overflow")
       return nil
    end
    if n ~= 0 then
@@ -11,4 +13,3 @@ function factorial(n, ans)
 end
 
 fact = factorial(arg[1] and tonumber(arg[1]) or 0) print(fact)
-print(fact)
